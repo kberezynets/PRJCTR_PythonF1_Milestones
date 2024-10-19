@@ -1,0 +1,14 @@
+You were previously uploading homework files directly to the CMS system. Now, that we know git, let's use it!
+
+1. Create a new repository + remote on GitHub. Organize your files in the following structure:
+
+- milestone_1
+-- equations.py
+- milestone_2
+-- encrypt.py
+-- decrypt.py
+...
+
+2. Commit each milestone with a separate commit.
+
+3. Create a README.md file with the description of the repository and a table of contents (relative link to the folder + name of the milestone).
