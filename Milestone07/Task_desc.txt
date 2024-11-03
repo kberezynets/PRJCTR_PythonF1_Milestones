@@ -1,0 +1,34 @@
+Let's return to your job at Ancient, Inc. The report tool (developed as the task for Milestone 5) was a huge success, but too much work for the HR department.
+
+Now they want to delegate the work of congratulating the employees to the departments, but it's still their responsibility to maintain the employee database, so they want to expose report functionality via API!
+
+Part 1 - server
+
+Your task is to write a simple flask server that will have the following endpoints:
+
+GET /birthdays?month=april&department=HRGET /anniversaries?month=april&department=HR
+
+The response should be a JSON-encoded report:
+{
+    "total": 1,
+    "eployees": [
+        {"id": 1, "name": "John Doe", "birthday": "Apr 18"}
+    ]
+}
+
+or similar.
+
+Part 2 - client
+
+To make life easier for departments, HR wants to distribute a cli-utility to query the API like this:
+# python fetch_report.py april Engineering
+# Report for Engineering department for April fetched.
+# Total: 4
+# Employees:
+# - Apr 1, John Doe
+# - Apr 10, Patrick Brown
+# - Apr 11, John Wood
+# - Apr 30, Helen King
+
+
+Implement fetch_report.py using requests library. To test it, run the server from Part 1 locally on port 5000.
