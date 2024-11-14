@@ -1,7 +1,0 @@
-Task (do each point in separate cell in ipynb file ):
-1) Read data from the file database.csv from milestone 5 into a data frame.
-2) Add a Salary column, which is generated randomly from -10000 to 40000
-3) Add a 'Correct salary' column with True value if Salary >= 0, else False value
-4) If the Salary column in the data frame is < 0, change to 0
-5) Save the new data frame to file database_with_salary.csv
-6) For each "Department" sum the "Salary" and create a bar chart with all departments and the total salary
